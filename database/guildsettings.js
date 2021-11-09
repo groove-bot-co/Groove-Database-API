@@ -40,7 +40,7 @@ const guildSchema = Schema({
 	TicketSupportRole: { type: String },
 	TicketCategory: { type: String },
 	Language: { type: String, default: 'en-US' },
-	plugins: { type: Array, default: ['Fun', 'Giveaway', 'Guild', 'Image', 'Misc', 'Moderation', 'Music', 'NSFW', 'Plugins', 'Searcher', 'Ticket'] },
+	plugins: { type: Array, default: ['Fun', 'Giveaway', 'Guild','Misc', 'Moderation', 'Music', 'NSFW', 'Plugins', 'Ticket'] },
 	version: { type: Number, default: '1.2' },
 });
 
