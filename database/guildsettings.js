@@ -23,8 +23,8 @@ const guildSchema = Schema({
 	LevelMultiplier: { type: Number, default: 1 },
 	LevelRoleRewards: { type: Array },
 	MusicDJ: { type: Boolean, default: false },
-	MusicDJRole: { type: String },
-	ModLog: { type: Boolean, default: false },
+	MusicDJRole: { type: String }, // the user with the DJ role will be able to have more power than a user without the role
+	ModLog: { type: Boolean, default: false }, // display actions done by users by sending them to a channel
 	ModLogEvents: { type: Array },
 	ModLogChannel: { type: String },
 	ModLogIgnoreBot: { type: Boolean, default: true },
@@ -40,8 +40,8 @@ const guildSchema = Schema({
 	TicketSupportRole: { type: String },
 	TicketCategory: { type: String },
 	Language: { type: String, default: 'en-US' },
-	plugins: { type: Array, default: ['Fun', 'Giveaway', 'Guild','Misc', 'Moderation', 'Music', 'NSFW', 'Plugins', 'Ticket'] },
-	version: { type: Number, default: '1.2' },
+	plugins: { type: Array, default: ['Fun', 'Giveaway', 'Guild','Misc', 'Moderation', 'Music', 'NSFW', 'Plugins', 'Ticket'] }, // will display plugins that are active or still need to be set up
+	version: { type: Number, default: '1.2' }, // grooves version
 });
 
 module.exports = model('Guild', guildSchema);
